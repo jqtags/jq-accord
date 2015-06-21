@@ -1,0 +1,6 @@
+{
+	"jqtags/jq-accord": {
+		"js": ["jqtags.accord.js"],
+		"css": ["jqtags.accord.css"]
+	}
+}

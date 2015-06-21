@@ -1,0 +1,87 @@
+/* compiled by scssphp v0.1.5 on Sun, 21 Jun 2015 23:17:17 +0200 (0.0465s) */
+
+.transition, jq-accord jq-accord-section > jq-accord-title jq-arrow:before, jq-accord jq-accord-section > jq-accord-title jq-arrow:after {
+	transition: all 0.25s ease-in-out;
+}
+.no-select, jq-accord jq-accord-section > jq-accord-title {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+jq-accord {
+	list-style: none;
+	perspective: 900;
+	padding: 0;
+	margin: 0;
+	padding: 5px;
+	box-sizing: border-box;
+}
+jq-accord jq-accord-head {
+	text-transform: uppercase;
+	font-size: 36px;
+	line-height: 42px;
+	letter-spacing: 3px;
+	font-weight: 100;
+	display: block;
+}
+jq-accord jq-accord-section {
+	display: list-item;
+	position: relative;
+	padding: 0;
+	margin: 0;
+	padding-bottom: 4px;
+	padding-top: 18px;
+	border-top: 1px dotted #dce7eb;
+}
+jq-accord jq-accord-section:last-of-type {
+	padding-bottom: 0;
+}
+jq-accord jq-accord-section[closed] > jq-accord-pane {
+	margin-top: 0;
+	max-height: 0;
+	height: 0;
+	display: block;
+	opacity: 0;
+	transform: translate(0, 50%);
+}
+jq-accord jq-accord-section jq-accord-pane {
+}
+jq-accord jq-accord-section > jq-accord-title {
+	font-size: 26px;
+	line-height: 34px;
+	font-weight: 300;
+	letter-spacing: 1px;
+	display: block;
+	background-color: #fefffa;
+	margin: 0;
+	cursor: pointer;
+}
+jq-accord jq-accord-section > jq-accord-title jq-arrow {
+	position: absolute;
+	transform: translate(-6px, 0);
+	margin-top: 16px;
+	right: 0;
+}
+jq-accord jq-accord-section > jq-accord-title jq-arrow:before, jq-accord jq-accord-section > jq-accord-title jq-arrow:after {
+	content: "";
+	position: absolute;
+	background-color: #ff6873;
+	width: 3px;
+	height: 9px;
+}
+jq-accord jq-accord-section > jq-accord-title jq-arrow:before {
+	transform: translate(-2px, 0) rotate(45deg);
+}
+jq-accord jq-accord-section > jq-accord-title jq-arrow:after {
+	transform: translate(2px, 0) rotate(-45deg);
+}
+jq-accord jq-accord-section[closed] > jq-accord-title > jq-arrow:before {
+	transform: translate(2px, 0) rotate(45deg);
+}
+jq-accord jq-accord-section[closed] > jq-accord-title > jq-arrow:after {
+	transform: translate(-2px, 0) rotate(-45deg);
+}
