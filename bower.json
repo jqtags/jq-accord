@@ -1,0 +1,26 @@
+{
+  "name": "jqtags-jq-accord",
+  "version": "0.0.0",
+  "main": "jqtags.accord.js",
+  "description": "advanced accordian tag",
+  "authors": [
+    "lalit.tanwar07@gmail.com"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jqtags/jq-accord.git"
+  },
+  "dependencies": {
+  },
+  "keywords": [
+    "polyfils"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
